@@ -1,0 +1,449 @@
+:root {
+  --primiry-text-color: #212121 ;
+  --secondary-text-color: #757575 ;
+  --accent-color: #2196F3 ;
+  --white: #FFFFFF ;
+  --bgc: #2F303A ;
+
+}
+
+body{
+  color: var(--primiry-text-color);
+  font-family: 'Roboto',sans-serif;
+  letter-spacing: 0.03em;
+}
+
+h1,h2,h3,h4,h5{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  
+}
+
+p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  
+}
+
+ul{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.button {
+  cursor: pointer;
+
+  color:var(--white);
+  background-color:var(--accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  padding: 10px 32px;
+  border-radius: 4px;
+
+  margin-bottom: 200px;
+}
+
+.conteiner{
+  width: 1200px;
+  margin: 0px auto;
+  padding-left: 15px;   
+  padding-right: 15px;
+  
+  
+}
+
+
+
+/* ------------------хедер--------------- */
+.header{
+  
+}
+
+
+
+.logo{
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  color: #000000;
+}
+
+.header-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation{
+  display: flex;
+  
+}
+
+.accent{
+ color:var(--accent-color);
+}
+
+.header-list{
+  display: flex;
+  
+
+  margin-top: 32px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+
+  list-style: none;
+  font-weight: 500;
+}
+
+.header-list .header-link.current{
+  color: var(--accent-color);
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+  
+}
+
+.header-link{
+  padding-top: 32px;
+  padding-bottom: 32px;
+  
+  color:
+  var(--primiry-text-color);
+
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.02em;
+}
+
+
+
+.header-link:hover,
+.header-link:focus {
+  color:var(--accent-color);
+}
+
+.header-mail{ 
+  display: flex;
+
+ list-style: none;
+ font-weight: 500;
+
+ margin-bottom: 0px;
+  margin-top: 32px;
+}
+
+.mail-item:first-child{
+  margin-right: 50px;
+}
+
+.mail-link{
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color:var(--secondary-text-color);
+
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.02em;
+}
+
+
+
+.mail-link:hover,
+.mail-link:focus {
+color:var(--accent-color);
+}
+
+
+/* -------------------------герой------------------- */
+
+.hero{
+  /* width: 1660px; */
+  /* height: 600px; */
+  background-color:
+  var(--bgc);
+  text-align: center;
+}
+
+.hero-title{
+ color: #FFFFFF;
+
+ font-weight: 900;
+ font-size: 44px;
+ line-height: 1.36;
+ letter-spacing: 0.06em;
+ text-transform: uppercase;
+ 
+ margin-top: 0px;
+ margin-bottom: 0px;
+ padding: 200px 452px 30px;
+
+}
+/* -------------------------------преимущества------------------- */
+.advantages{
+  padding-top: 90px;
+  padding-bottom: 94px;
+}
+
+.advantages-list{
+  display: flex;
+  gap: 30px;
+
+  list-style: none;
+
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.advantages-item{
+  flex-basis: calc((100%-90px)/4);
+}
+
+.advantages-title{
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.advantages-text{
+ color:
+ var(--secondary-text-color);
+ font-weight: 400;
+ font-size: 14px;
+ line-height: 1.71;
+}
+/* ---------------------------------------работа---------------------- */
+
+.work{
+  padding-bottom: 94px;
+}
+
+.work-title{
+ font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.work-list{
+  display: flex;
+  gap: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  list-style: none;
+}
+/* ---------------------------------------------команда-------------------------- */
+.team{
+  background-color: #F5F4FA;
+  padding-bottom: 94px;
+}
+
+.team-title{
+ font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+
+.team-list{
+  display: flex;
+  gap: 30px;
+
+ list-style: none;
+
+ margin-top: 0px;
+ margin-bottom: 0px;
+ padding-left: 0px;
+}
+
+.team-card{
+  background-color: var(--white);
+}
+
+
+
+.team-name{
+ font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+
+  padding-top: 30px;
+  margin-bottom: 10px;
+}
+
+.team-prof{
+ color:var(--secondary-text-color);
+ 
+ font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+
+  padding-bottom: 30px;
+}
+
+/* ---------------------футер----------------- */
+
+.footer{
+  
+  background-color:
+  var(--bgc);
+}
+
+.footer-auth{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo{
+ color:var(--white);
+
+ font-family: 'Raleway';
+ font-weight: 700;
+ font-size: 26px;
+ line-height: 1.19;
+ text-decoration: none;
+
+ padding-top: 60px;
+ margin-bottom: 20px;
+ 
+}
+
+.footer-list{
+ list-style: none;
+
+ padding-left: 0px;
+ padding-bottom: 60px;
+ margin-top: 0px;
+ margin-bottom: 0px;
+}
+
+.footer-link{
+ color: rgba(255, 255, 255, 0.6);;
+  
+ font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color:var(--white);
+}
+
+
+/* ---------------------------Портфолио_______________________________________________ */
+.portfolio{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.menu-list{
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+
+  margin-bottom: 50px;
+
+  list-style: none;
+}
+
+.menu-portfolio{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+
+.portfolio-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex-basis: calc((100%-360px)/9);
+
+  list-style: none;
+  
+}
+
+
+
+.portfolio-title{
+  color: #212121;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  
+  
+  padding-left: 24px;
+}
+
+.portfolio-text{
+  color: #757575;
+  
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  padding-left: 24px;
+}
+
+.porfolio-card{
+  background-color: var(--white);
+  border: 1px solid #EEEEEE;
+
+  
+
+}
+
+.menu-portfolio {
+  background-color: #F5F4FA;
+  color: var(--primiry-text-color);
+
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 6px 22px;
+  cursor: pointer;
+  min-width: 73px;
+}
+
+.menu-portfolio:hover,
+.menu-portfolio:focus {
+  color: var(--white);
+  background-color: var(--accent-color);
+}
+
+
+
