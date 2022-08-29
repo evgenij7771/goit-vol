@@ -241,12 +241,14 @@ color:var(--accent-color);
 .advantages-list{
   display: flex;
   gap: 30px;
+  
 
   list-style: none;
 
   padding-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
+  
 }
 
 .advantages-item{
@@ -272,6 +274,7 @@ color:var(--accent-color);
 .advatages-list{
   display:flex;
   justify-content: center;
+  align-items: center;
   
   width: 270px;
   height: 120px;
@@ -286,7 +289,7 @@ color:var(--accent-color);
   width: 70px;
   height: 70px;
 
-  margin: 25px 100px;
+  /* margin: 25px 100px; */
 }
 /* ---------------------------------------работа---------------------- */
 
@@ -338,11 +341,18 @@ color:var(--accent-color);
  padding-left: 0px;
 }
 
+.team-item{
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-card{
   background-color: var(--white);
 
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  
 }
 
 
@@ -353,7 +363,7 @@ color:var(--accent-color);
   line-height: 1.19;
   text-align: center;
 
-  padding-top: 30px;
+  
   margin-bottom: 10px;
 }
 
@@ -365,14 +375,14 @@ color:var(--accent-color);
   line-height: 1.19;
   text-align: center;
 
-  padding-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .team-list-icon{
   display: flex;
   justify-content: center;
   column-gap: 10px;
-  padding-bottom: 30px;
+  
 }
 
 .team-link{
@@ -435,6 +445,11 @@ color:var(--accent-color);
   fill: #AFB1B8;
 }
 
+.clients-link:hover,
+.clients-link:focus{
+  border-color: var(--accent-color);
+}
+
 
 
 .clients-link:hover .clients-icon,
@@ -451,6 +466,9 @@ color:var(--accent-color);
   
   background-color:
   var(--bgc);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-auth{
@@ -467,7 +485,7 @@ color:var(--accent-color);
  line-height: 1.19;
  text-decoration: none;
 
- padding-top: 66px;
+ 
  margin-bottom: 20px;
  
 }
@@ -476,18 +494,28 @@ color:var(--accent-color);
  list-style: none;
 
  padding-left: 0px;
- padding-bottom: 60px;
+ 
  margin-top: 0px;
  margin-bottom: 0px;
 }
 
+.footer-item{
+  margin-bottom: 9px;
+}
+
 .footer-link{
- color: rgba(255, 255, 255, 0.6);;
-  
+ color: rgba(255, 255, 255, 0.6);
  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  text-decoration: none;
+ line-height: 1.71;
+ letter-spacing: 0.03em;
+ text-decoration: none;
+ font-style: normal;
+}
+
+.footer-link-adress{
+  color:var(--white);
+
+  font-style: normal;
 }
 
 .footer-link:hover,
@@ -508,10 +536,11 @@ color:var(--accent-color);
 
 .footer-box{
   display: flex;
+  align-items: baseline;
 }
 
 .social-networks{
-  padding-top: 78px;
+  
   margin-left: 70px;
 }
 
@@ -546,6 +575,12 @@ color:var(--accent-color);
 
 
 /* ---------------------------Портфолио_______________________________________________ */
+
+.header-portfolio{
+  border-bottom: 1px solid #ECECEC;
+}
+
+
 .portfolio{
   padding-top: 94px;
   padding-bottom: 94px;
